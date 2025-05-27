@@ -1,0 +1,49 @@
+Image Optimizing
+Font Optimizing
+
+Navigation Optimizing:
+	next/link
+	Patter: Showing active links
+
+usePathname() [next/navigation] - react hook to read current url of the page.
+
+'use client' - tells to run to browser not on the server. Adding this to file will treat it as client component
+
+clsx - is a small tool that helps you easily combine CSS class names based on conditions
+
+Fetching Data:
+
+fetching whole data structure example code snippet:
+const revenue = await fetchRevenue();
+
+fetching specific properties of the data strcture is like this:
+const {
+  numberOfInvoices,
+  numberOfCustomers,
+  totalPaidInvoices,
+  totalPendingInvoices,
+} = await fetchCardData();
+
+Waterfall Pattern
+- Satisft a condition before make the next request
+
+Parallel Data Fetching
+- initiate all data requests at the same time 
+
+Static Rendering
+ data fetching and rendering happens on the server at build time (when you deploy) or when revalidating data.
+
+Dynamic Rendering
+ content is rendered on the server for each user at request time (when the user visits the page). 
+
+Streaming 
+ is a data transfer technique that allows you to break down a route into smaller "chunks" and progressively stream them from the server to the client as they become ready.
+
+loading.tsx 
+ is a special Next.js file built on top of React Suspense. It allows you to create fallback UI to show as a replacement while page content loads.
+
+loading skeleton 
+ is a simplified version of the UI. Many websites use them as a placeholder (or fallback) to indicate to users that the content is loading.
+
+React Suspense
+ allows you to defer rendering parts of your application until some condition is met (e.g. data is loaded). You can wrap your dynamic components in Suspense. Then, pass it a fallback component to show while the dynamic component loads.
