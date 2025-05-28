@@ -54,3 +54,13 @@ React Suspense
 Url Search Param - where user input into url param like example.com/dashboard/invoices?query=Jerwin "Jerwin" is the user input
 
 Debouncing
+  is a programming practice that limits the rate at which a function can fire. In our case, you only want to query the database when the user has stopped typing
+to install debounce
+pnpm i use-debounce
+
+Pagination in URL param
+
+Tip: If you're working with forms that have many fields, you may want to consider using the entries() method with JavaScript's Object.fromEntries().
+
+Zod 
+ is a TypeScript-first validation library. Using Zod, you can define schemas you can use to validate data, from a simple string to a complex nested object.
