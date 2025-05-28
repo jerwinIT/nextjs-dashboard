@@ -50,9 +50,4 @@ React Suspense
 
 Url Search Param - where user input into url param like example.com/dashboard/invoices?query=Jerwin "Jerwin" is the user input
 
-<<<<<<< Updated upstream
- Debouncing
-
-=======
 Debouncing
->>>>>>> Stashed changes
