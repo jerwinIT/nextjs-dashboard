@@ -1,3 +1,6 @@
+# Install pnpm globally
+npm install -g pnpm
+
 Image Optimizing
 Font Optimizing
 
