@@ -64,3 +64,9 @@ Tip: If you're working with forms that have many fields, you may want to conside
 
 Zod 
  is a TypeScript-first validation library. Using Zod, you can define schemas you can use to validate data, from a simple string to a complex nested object.
+
+import { redirect } from "next/navigation";
+ if you want to redirect after a function is executed
+
+ import { revalidatePath } from 'next/cache';
+  it invalidates or refreshes the cached data for a specific path (like /dashboard/invoices), so the next time someone visits that path, it shows fresh, updated content.
