@@ -70,3 +70,13 @@ import { redirect } from "next/navigation";
 
  import { revalidatePath } from 'next/cache';
   it invalidates or refreshes the cached data for a specific path (like /dashboard/invoices), so the next time someone visits that path, it shows fresh, updated content.
+
+error.tsx 
+  A special file can be used to define a UI boundary for a route segment. It serves as a catch-all for unexpected errors and allows you to display a fallback UI to your users.
+
+notFound function
+ can be used when you try to fetch a resource that doesn't exist.
+
+Accessibility
+ eslint - use to catch accessibility error
+ 
