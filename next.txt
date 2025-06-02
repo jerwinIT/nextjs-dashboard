@@ -79,4 +79,94 @@ notFound function
 
 Accessibility
  eslint - use to catch accessibility error
+ input validation - to ensure consistent data input to your database and avoid hacker bypass in your inputs
  
+
+----------------------------------------------------------
+https://nextjs.org/learn/dashboard-app/adding-authentication
+
+
+Authentication
+ is about making sure the user is who they say they are. You're proving your identity with something you have like a username and password.
+
+Authorization 
+ is the next step. Once a user's identity is confirmed, authorization decides what parts of the application they are allowed to use.
+
+
+NextAuth.js 
+ to add authentication to your application.
+ - pnpm i next-auth@beta
+
+ Secret key
+  is used to encrypt cookies, ensuring the security of user sessions
+
+Generate Secret Key
+ https://generate-secret.vercel.app/32
+
+To make the auth work also in production you need to update your environment variable in your vercel project
+
+NextAuth.js. providers 
+ is an array where you list different login options such as Google or GitHub.
+
+Alternative auth providers:
+  https://authjs.dev/getting-started/authentication/oauth
+
+
+----------------------------------------------------------
+https://nextjs.org/learn/dashboard-app/adding-metadata
+
+Metadata (enhance seo)
+ provides additional details about a webpage. 
+ This hidden information is crucial for search engines and other systems that need to understand your webpage's content better.
+
+Title Metadata
+ <title>Page Title</title>
+
+Description Metadata: This metadata provides a brief overview of the webpage content and is often displayed in search engine results.
+ <meta name="description" content="A brief description of the page content." />
+
+Keyword Metadata: his metadata includes the keywords related to the webpage content, helping search engines index the page.
+ <meta name="keywords" content="keyword1, keyword2, keyword3" />
+
+Open Graph Metadata: This metadata enhances the way a webpage is represented when shared on social media platforms, providing information such as the title, description, and preview image.
+ <meta property="og:title" content="Title Here" />
+ <meta property="og:description" content="Description Here" />
+ <meta property="og:image" content="image_url_here" />
+     
+title.template 
+ field in the metadata object to define a template for your page titles
+
+More about metadata:
+ https://nextjs.org/docs/app/api-reference/functions/generate-metadata
+
+
+
+
+
+--------------------------------------------
+Learn more about nextjs
+
+Next.js Documentation:
+ https://nextjs.org/docs
+
+Next.js Templates:
+
+ Admin Dashboard Template
+  https://vercel.com/templates/next.js/admin-dashboard-tailwind-postgres-react-nextjs
+ 
+ Next.js Commerce
+  https://vercel.com/templates/next.js/nextjs-commerce
+
+ Blog Starter Kit
+  https://vercel.com/templates/next.js/blog-starter-kit
+
+ AI Chatbot
+  https://vercel.com/templates/next.js/nextjs-ai-chatbot
+ 
+ Image Gallery Starter
+  https://vercel.com/templates/next.js/image-gallery-starter
+
+ Nextjs YT
+  https://www.youtube.com/@VercelHQ/videos
+
+
